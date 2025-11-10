@@ -1,0 +1,15 @@
+﻿# SecureUserPortal (.NET MVC)
+
+## Overview
+A secure ASP.NET Core web app demonstrating input validation, authentication, authorization (RBAC), and security middleware.
+
+## Security Features
+- **Input Validation:** DataAnnotations + HTML encoding to prevent SQL Injection & XSS.
+- **RBAC:** Identity roles (“Admin”, “User”).
+- **Middleware:** Adds security headers to prevent clickjacking & MIME sniffing.
+- **HTTPS Enforcement:** via `UseHttpsRedirection()`.
+
+## Testing
+Run:
+```bash
+dotnet test
